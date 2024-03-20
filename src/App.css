@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration-skip-ink: none;
+  text-decoration: none;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #f2f2f2;
+}
+.popup-overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.popup-body {
+  width: 500px;
+}
+.form-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background-color: #a9cbc1;
+  border-radius: 20px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form input {
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid gainsboro;
+  padding: 0 20px;
+  font-size: 14px;
+}
+.start-btn {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+.score-wpar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.map-wrap {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.canvas-container {
+  overflow: hidden;
+
+  height: 300px;
+}
+
+.settings {
+  margin: 20px auto;
+  display: flex;
+  gap: 10px;
+}
+.pop-title {
+  font-size: 60px;
+  text-align: center;
+}
+.pop-title.fail {
+  color: red;
+}
+.pop-title.success {
+  color: green;
+}
